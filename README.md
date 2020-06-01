@@ -34,7 +34,5 @@ https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of
 7. 安装时提示"MacOS Mojave应用程序副本已损坏",请拔掉网线，然后打开终端，使用命令 date  053008102019.20
 格式是月 日 时 分 年 秒。然后就可以安装了。
 8. 我是win10+黑🍎双系统，所以需要diskgenius来创建一个efi分区并且大小大于200m，切记一定要做这一步。我第一次安装不知道没做，
-然后win10的引导没了，无法进入win10，无法修复。可以参考教程https://blog.csdn.net/qq_35379989/article/details/83387358。
+然后win10的引导没了，无法进入win10，无法修复。可以参考教程https://blog.csdn.net/qq_35379989/article/details/83387358
 
-
-https://blog.daliansky.net/Tutorial-Using-Hackintool-to-open-the-correct-pose-of-the-8th-generation-core-display-HDMI-or-DVI-output.html 设置HDMI输出。然而我一直没成功。。。我后来是用的黑果小兵镜像里的config uhd630 hdmi 直接成功驱动。

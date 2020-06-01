@@ -4,6 +4,7 @@
 依然小白一个，只是误打误撞成功了，希望能帮到大家。
 首先感谢黑果小兵，里面有很多教程。地址：https://blog.daliansky.net/
 ## 最终成果
+![系统报告](https://github.com/xljnc/clover-z390_aorus_master_uhd630/blob/master/system.png?raw=true)
 ## 系统: macos x mojave 
 ##  硬件列表：
 * cpu: i9-9900k (coffee lake)

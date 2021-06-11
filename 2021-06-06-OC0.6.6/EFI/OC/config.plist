@@ -412,6 +412,15 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>IOName</key>
+				<string>#display</string>
+				<key>class-code</key>
+				<data>/////w==</data>
+				<key>name</key>
+				<data>I2Rpc3BsYXk=</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -440,27 +449,10 @@
 				<string>Display controller</string>
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-2</string>
 				<key>model</key>
-				<string>Intel UHD Graphics 630 (Desktop 9 Series)</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>IOName</key>
-				<string>#display</string>
-				<key>class-code</key>
-				<data>/////w==</data>
-				<key>name</key>
-				<data>I2Rpc3BsYXk=</data>
+				<string>Intel CoffeeLake-S GT2 [UHD Graphics 630]</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1004,7 +996,7 @@
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>Ym9hcmQtaWQ=</data>
 				<key>Identifier</key>
@@ -1059,8 +1051,6 @@
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
-			<key>SetApfsTrimTimeout</key>
-			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
 			<true/>
 			<key>XhciPortLimit</key>
@@ -1088,10 +1078,6 @@
 			<string>Auto</string>
 			<key>HideAuxiliary</key>
 			<false/>
-			<key>LauncherOption</key>
-			<string>Disabled</string>
-			<key>LauncherPath</key>
-			<string>Default</string>
 			<key>PickerAttributes</key>
 			<integer>17</integer>
 			<key>PickerAudioAssist</key>
@@ -1107,7 +1093,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>8</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1181,7 +1167,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v -lilubetaall -disablegfxfirmware</string>
+				<string>-lilubetaall</string>
 				<key>csr-active-config</key>
 				<data>/w8AAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1282,8 +1268,6 @@
 		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Create</string>
-		<key>UseRawUuidEncoding</key>
-		<false/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -1329,7 +1313,7 @@
 			<string>HFSPlus.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
-			<string>OpenUsbKbDxe.efi</string>
+			<string>AudioDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1420,8 +1404,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DisableSecurityPolicy</key>
-			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
